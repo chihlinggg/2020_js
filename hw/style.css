@@ -1,0 +1,482 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  /* margin: 0; */
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.wrap{
+  width: 100%;
+  font-family: Microsoft JhengHei;
+}
+
+/* header */
+.header{
+  width: 100%;
+  height: 55px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.header ul li{
+  display: inline-block;  
+}
+.header a{
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-decoration:none;
+  color: rgb(255, 255, 255);
+}
+.header a:hover{
+  cursor: pointer;
+  color: rgb(122, 121, 121);
+  border-bottom: 5px solid  rgb(122, 121, 121);
+}
+
+/* content */
+.content{
+  width: 100%;
+  position: relative;
+  top: 60px;
+  padding: 25px 0 0 0;
+  box-sizing: border-box;
+}
+
+/* about_me */
+.about_me{
+  margin: 0 200px 40px 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.left_intro{
+  width: 300px;
+  height: 500px;
+  background: rgb(233, 232, 232);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow:2px 2px 3px rgb(122, 121, 121);
+}
+.left_intro img{
+  width: 200px;
+  border-radius: 50%;
+	border: 3px solid rgb(255, 255, 255);
+  margin: 40px 0 20px 0;
+  animation: ling 5s;
+}
+@keyframes ling{
+  0%{opacity: 0;border-radius: 0%;}
+  100%{}
+}
+.left_intro p{
+  font-size: 24px;
+  margin: 20px 0 ;
+}
+.right_intro{
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact,.edu,.other{
+  width: 48%;
+  margin-bottom: 30px;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px 0 20px;
+  box-sizing: border-box;
+  box-shadow:2px 2px 4px #666;
+  position: relative;
+}
+.right_intro p{
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+.right_intro span{
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+.pin{
+  position: absolute;
+  top: -10px;
+  right: 40px;
+  background: white;
+  padding: 0 5px;
+  color:  rgb(122, 121, 121);
+}
+.other{
+  width: 100%;
+}
+.other a{
+  text-decoration:none;
+  color: black;
+}
+.other a:hover{
+  text-shadow: 0 0 0.2em rgb(70, 113, 194);
+}
+
+/* photo_album */
+.photo_album{
+  background: lightgray;
+  padding: 50px 150px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photo_album h2{
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 50px;
+  border-bottom: 1px dashed white;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+.photo_album div{
+  background: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.photo_album div p{
+  font-size: 18px;
+  text-align: center;
+  border-top: 1px dashed  rgb(163, 162, 162);
+  padding: 5px 0;
+  margin-top: 10px;
+}
+.photo1{
+  width: 100%;
+}
+.photo2{
+  width: 40%;
+}
+.photo3{
+  width: 20%;
+}
+.photo4{
+  width: 30%;
+}
+.photo_09{
+  width: 22%;
+}
+.photo_album img{
+  width: 100%;
+}
+
+/* idol */
+.idol{
+  padding: 50px 200px 30px 200px;
+}
+.idol span{
+  display: block;
+  text-align: center;
+  margin-bottom: 25px;
+  -webkit-text-stroke: 2px black;
+  color: white;
+  font-size: 50px;
+  font-family: Comic Sans MS;
+  animation: bling .5s infinite alternate;
+}
+@keyframes bling{
+  0%{color: #fff;}
+  100%{color: black;}
+}
+.idol span:hover{
+  color: #000;
+}
+.idol div{
+  background: rgb(163, 162, 162,0.2);
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+
+}
+.idol img{
+  width: 300px;
+  border-radius: 20px 0 0 20px ;
+  height: 100%
+}
+.idol ol{
+  margin: 20px;
+  font-size: 22px;
+}
+.idol ol li{
+  padding: 10px;
+}
+
+/* schedule */
+.schedule{
+  background: lightgray;
+  box-sizing: border-box;
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.schedule_title{
+  width: 100%;
+  background: rgb(255, 255, 255,0.8);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.schedule table{
+  font-size:16px; 
+  width:75%;
+  height: 650px;
+  text-align:center;
+  border-collapse:collapse;
+  /* background: rgb(255, 255, 255,0.8); */
+  table-layout: fixed;
+} 
+.schedule table th { 
+  background-color:rgb(155, 151, 151, 0.781);
+  padding:10px;
+  border:1px solid rgb(221, 217, 217);
+  color:#fff;
+  height: 10x;
+  vertical-align: middle;
+  font-size: 28px;
+} 
+.schedule table td { 
+  vertical-align: middle;
+  font-size: 22px;
+  padding:5px;
+}
+.nothing{
+  background: rgb(247, 228, 196);
+  border:1px solid rgba(192, 188, 188);
+}
+.part_time{
+  background: rgb(207, 229, 240);
+  border:1px solid rgba(192, 188, 188);
+}
+.part_time:hover{
+  background: rgb(168, 215, 238);
+}
+.class{
+  background: rgb(235, 181, 181);
+  border:1px solid rgba(192, 188, 188);
+}
+.class:hover{
+  background: rgb(236, 159, 159);
+}
+.table_right{
+  width: 20%;
+  height: 100%;
+  background: rgba(211, 211, 211, 0);
+}
+.table_right ul{
+  background: rgb(255, 255, 255,0.8);
+  padding: 5px 0;
+}
+.table_right li{
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: 28px;
+  margin: 10px 10px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/* mv */
+.mv{
+  padding: 20px;
+  text-align: center;
+}
+.mv h2{
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 50px;
+  /* border-bottom: 1px dashed white; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+iframe{
+  width: 90%;
+  height: 500px;
+}
+/* add */
+.add{
+  background: lightgray;
+  padding: 50px 200px ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.add_title{
+  background: white;
+  color: black;
+  font-size: 50px;
+  padding:  10px;
+  width: 30%;
+  text-align: center;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  box-shadow:2px 2px 4px rgb(148, 146, 146);
+  transition: 1s 0s ease;
+}
+.add_title:hover{
+  background: #000;
+  color: #fff;
+  width: 35%;
+}
+.add form{
+  width: 80%;
+  background: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 20px;
+}
+.add form span{
+  width: 42%;
+  text-align: left;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.add form .span_left{
+  text-align: right;
+}
+.add textarea{
+  width: 70%;
+  margin: 0 15% 20px 15%;
+}
+.add .btn{
+  width: 10%;
+  margin: 0 45% 10px 45%;
+  padding: 10px 0;
+  border-radius: 50px;
+  border: none;
+  box-shadow:2px 2px 4px rgb(148, 146, 146);
+  cursor: pointer;
+}
+.footer{
+  text-align: center;
+  position: relative;
+  top: 60px;
+  height: 50px;
+  line-height: 50px;
+}
+@media(max-width: 768px){
+  .header{
+    /* display: none; */
+    width: 100%;
+  }
+  .about_me{
+    width: 80%;
+    margin: 0 10%;
+    flex-direction: column;
+  }
+  .left_intro{
+    width: 100%;
+    height: 240px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .left_intro img{
+    margin: 20px;
+    box-sizing: border-box;
+  }
+  .left_intro p {
+    margin: 10px 0;
+  }
+  .right_intro{
+    width: 100%;
+  }
+  .contact,.edu,.other{
+    width: 100%;
+  }
+  .photo_album{
+    padding: 50px 5%;
+  }
+  .idol{
+    padding: 50px 10% 30px 10%;
+  }
+  .idol img{
+    width: 200px;
+    border-radius: 50%;
+  }
+  .idol div{
+    align-items: center;
+    padding-left: 20px;
+  }
+  .schedule{
+    padding: 50px 5%;
+  }
+  .add{
+    padding: 50px 0;
+  }
+  .add_title{
+    width: 50%;
+  }
+}
+@media(max-width: 425px){
+  .about_me{
+    width: 90%;
+    margin: 0 5%;
+  }
+
+}
