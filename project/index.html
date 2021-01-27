@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/46167ebbf6.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#account_hover").hide();
+      $("#account_click").click(function () {
+        $("#account_hover").slideToggle();
+      });
+    });
+  </script>
+  <title>icook</title>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <a class="header_title_a" href="https://icook.tw/">
+        <div class="header_title">
+          <span>料理生活平台</span>
+          <strong>愛料理</strong>
+        </div>
+        <img src="https://assets-icook.icook.network/packs/media/images/festival-new-year-desktop-fe4f2d6b.jpg" alt="">
+      </a>
+      <div class="header_right">
+        <div class="header-right-desktop">
+          <ul>
+            <li><a href="index.html">愛料理</a></li>
+            <li><a href="">生活誌</a></li>
+            <li><a href="">市集</a></li>
+            <li><a href="">影音</a></li>
+            <li><a href="">試用推薦</a></li>
+            <li><a href="" class="vip">升級VIP</a></li>
+          </ul>
+          <ul class="account" id="account_click">
+            <li><img src="img/songmeow.JPG" alt=""></li>
+            <li>張芷菱</li>
+            <ul class="account_hover" id="account_hover">
+              <li><a href="myAccount.html">個人頁面</a></li>
+              <li>食譜收藏</li>
+              <li class="underline">草稿</li>
+              <li>商品訂單</li>
+              <li class="underline">商品蒐藏</li>
+              <li>帳號設定</li>
+              <li>登出</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="header-right-mobile"></div>
+      </div>
+    </div>
+    <div class="header_categories">
+      <ul>
+        <li><a href="">過年年菜</a></li>
+        <li><a href="">烘焙點心</a></li>
+        <li><a href="">素食/蔬食</a></li>
+        <li><a href="">健身</a></li>
+        <li><a href="">寶寶副食品</a></li>
+        <li><a href="">親子</a></li>
+        <li><a href="">慢性病</a></li>
+        <li><a href="">氣炸鍋</a></li>
+        <li><a href="">寵物鮮食</a></li>
+        <li><a href="">美容</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="header_action">
+        <div class="searchBox">
+          <div class="search_by_type_container">
+            <div class="search_by_type">
+              <select name="" id="">
+                <option value="">找食譜</option>
+                <option value="">找作者</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" class="search-input" placeholder="搜尋食譜名" >
+          <input type="text" class="search-input" placeholder="搜尋食材 以空格分開">
+          <button type="submit"><i class="fa fa-search fa-20x"></i></button>
+        </div>
+        <div class="recipe_post">
+          <a href="">
+            <i class="fa fa-bookmark"></i>
+            <span>食譜收藏</span>
+          </a>
+          <a href="">
+            <i class="fa fa-plus"></i>
+            <span>寫食譜</span>
+          </a>
+        </div>
+      </div>
+      <div class="hot_search">
+        <ul>
+          <li class="popular_keywords_items popular_keyword"><a href="">熱搜：</a></li>
+          <li class="popular_keywords_items"><a href="">湯</a></li>
+          <li class="popular_keywords_items"><a href="">麻油雞</a></li>
+          <li class="popular_keywords_items"><a href="">年菜</a></li>
+          <li class="popular_keywords_items"><a href="">雞湯</a></li>
+          <li class="popular_keywords_items"><a href="">火鍋</a></li>
+          <li><a href=""><i class="fa fa-caret-down"></i></a></li>
+        </ul>
+      </div>
+      <div class="food_photo">
+        <div class="food_photo_left">
+          <img
+            src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/hero_story_item/image/27339/1ffe4591fa200692.jpg&stripmeta=true&width=1200&nocrop=true"
+            alt="">
+          <div class="food_photo_wordspace">
+            <span>編輯精選</span>
+            <h2>低卡美食這樣做！來一點清淡的吧～</h2>
+          </div>
+        </div>
+        <div class="food_photo_right">
+          <div class="food_photo_right_1">
+            <img src="https://imageproxy.icook.network/resize?height=932.75&width=1400&nocrop=false&url=https%3A%2F%2Fuploads-blog.icook.network%2F2020%2F12%2F80a1e50f-800%EF%BC%89-800x533.jpg&type=auto" alt="">
+            <div class="food_photo_wordspace2">
+              <span>飲食小知識</span>
+              <h3>減肥、減重瘦身不吃飯改吃麵包？</h3>
+            </div>
+          </div>
+          <div class="food_photo_right_2">
+            <img src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/hero_story_item/image/27341/4453a7a4e984fd50.jpg&stripmeta=true&width=900&nocrop=true" alt="">
+            <div class="food_photo_wordspace2">
+              <span>12/30 星期三</span>
+              <h3>今晚吃什麼？就煮這3道！</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="homepage">
+        <div class="homepage_main">
+          <section class="homepage_section">
+            <header>
+              <h3>最新生活誌文章</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul">
+                <li>
+                  <a href="">
+                    <img class="img_80" src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-blog.icook.network/2020/12/c767c412-plate-chestnuts_1088-140.jpg&stripmeta=true&width=400&nocrop=true" alt="">
+                    <span>栗子怎麼煮？怎麼剝？秋冬養胃健脾，就靠栗子料理！</span> 
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="img_80"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-blog.icook.network/2020/12/c3d4567e-p1.jpg&stripmeta=true&width=400&nocrop=true"
+                      alt="">
+                    <span>咖啡買一送一懶人包／年末喝咖啡！星巴克、伯朗等祭出多項咖啡優惠</span>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-blog.icook.network/2020/12/e2ac4df2-top.png&stripmeta=true&width=400&nocrop=true"
+                      alt="">
+                    <span>我要代替月亮懲罰你！美少女戰士 x 3COINS 推出聯名小物必收～</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="homepage_section">
+            <header>
+              <h3>今日話題食譜</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul homepage_section_ul_row">
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/361641/941fe40981fd7ce1.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">年菜~蒜蓉粉絲蒸蝦</span>
+                    <span class="row_span2">番茄媽咪</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/361502/5c2a70e2eee9453f.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">#110 蔥燒雞湯麵</span>
+                    <span class="row_span2">阿紘ㄟ灶咖🍖</span>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/360997/540f4b042cc854fc.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">蟹味大蒜濃湯</span>
+                    <span class="row_span2">顏廷軒</span>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/360995/e08e1c913f89b61a.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">福菜滷竹筍</span>
+                    <span class="row_span2">洪瑪迷の不專業小廚房</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="homepage_section">
+            <header>
+              <h3>人氣食譜</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul homepage_section_ul_row">
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/361486/de4af82a2141758c.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">白菜胡椒香菇雞湯</span>
+                    <span class="row_span2">小毓の饗樂廚房🍳</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="recipes.html">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/362350/9f0449c6d7932e2b.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">法式吐司</span>
+                    <span class="row_span2">西路手作🇺🇸🇹🇼</span>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/361460/0fee6360dae5b85d.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">蜜芋頭🎶</span>
+                    <span class="row_span2">凱茜媽咪の廚房</span>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/recipe/cover/361839/8a563c8ae13a1351.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1">聖誕🎄抹茶花圈餅乾</span>
+                    <span class="row_span2">lily5831</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="ad_block ad_block_200"><i class="fas fa-ad"></i></section>
+          <section class="homepage_section">
+            <header>
+              <h3 class="homepage_section_ul_row3_h3">本週熱銷</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul homepage_section_ul_row homepage_section_ul_row3">
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178 img_238"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-market.icook.network/uploads/product/cover/567/medium_2f61d659a7.jpeg&stripmeta=true&width=400&nocrop=true"
+                      alt="">
+                    <span class="row_span1 row3_span1">LazySusan 空氣炸鍋</span>
+                    <div class="row3_span2_flex">
+                      <span class="row_span2 row3_span2">氣炸、烘／燒烤、烘焙、乾燥五合一</span>
+                      <button>選購</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178 img_238"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-market.icook.network/uploads/product/cover/585/medium_3bdd88cc39.jpg&stripmeta=true&width=400&nocrop=true"
+                      alt="">
+                    <span class="row_span1 row3_span1">MIT 立體透氣口罩架</span>
+                    <div class="row3_span2_flex">
+                      <span class="row_span2 row3_span2">撐口罩透大氣 撐生活做大事</span>
+                      <button>選購</button>
+                    </div>
+                  </a>
+                </li>
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178 img_238"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=https://uploads-market.icook.network/uploads/product/cover/129/medium_fc87063cbb.jpg&stripmeta=true&width=400&nocrop=true"
+                      alt="">
+                    <span class="row_span1 row3_span1">董事長福貴糕</span>
+                    <div class="row3_span2_flex">
+                      <span class="row_span2 row3_span2">總裁級用料，每日新鮮限量販售</span>
+                      <button>選購</button>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class=" homepage_section keywords">
+            <header>
+              <h3>熱搜關鍵字</h3>
+            </header>
+            <ul>
+              <li><a href="">三杯雞</a></li>
+              <li><a href="">鬆餅</a></li>
+              <li><a href="">蘿蔔糕</a></li>
+              <li><a href="">香菇雞湯</a></li>
+              <li><a href="">蒸蛋</a></li>
+              <li><a href="">剝皮辣椒雞湯</a></li>
+              <li><a href="">雪Ｑ餅</a></li>
+              <li><a href="">湯</a></li>
+              <li><a href="">玉米濃湯</a></li>
+              <li><a href="">餅乾</a></li>
+            </ul>
+          </section>
+        </div>
+        <div class="homepage_aside">
+          <section class="ad_block"><i class="fas fa-ad"></i></section>
+          <section class="homepage_section activity">
+            <header>
+              <h3>活動</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul homepage_section_ul_row">
+                <li>
+                  <a href="">
+                    <img class="img_80 img_178 img_302"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/campaign/cover/405/dcf3f9132fba431d.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                    <span class="row_span1 activity_row_span1">S&B 五款熱銷調味醬！變身美味新吃法！</span>
+                    <span class="row_span2 row3_span2 activity_row_span2">2021/01/05 截止</span>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+          <section class="homepage_section kitchen">
+            <header>
+              <h3>品牌廚房</h3>
+              <a href="">更多 ></a>
+            </header>
+            <section>
+              <ul class="homepage_section_ul">
+                <li class="last_li">
+                  <a href="">
+                    <img class="img_80 img_178 img_302 img_128"
+                      src="https://imageproxy.icook.network/resize?type=auto&url=http://tokyo-kitchen.icook.tw.s3.amazonaws.com/uploads/campaign/cover/405/dcf3f9132fba431d.jpg&stripmeta=true&width=600&nocrop=true"
+                      alt="">
+                      <div class="kitchen_span">
+                        <span class="row_span1 activity_row_span1">銷魂月見沙茶飯</span>
+                        <span class="row_span2 row3_span2 activity_row_span2">牛頭牌 家的美味</span>
+                      </div>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_col">
+        <img src="/project/img/footer_img.png" alt="" class="img_170">
+        <p>&copy;2011-2021 Polydice, Inc.</p>
+        <ul class="footer_contact">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-line"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+        </ul>
+        <span class="footer_contact_email"><i class="far fa-envelope"></i>建議與問題</span>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">關於愛料理</a></li>
+          <li><a href="">公司資訊</a></li>
+          <li><a href="">徵才訊息</a></li>
+          <li><a href="">廣告合作</a></li>
+          <li><a href="">品牌資產</a></li>
+          <li><a href="">服務條款</a></li>
+          <li><a href="">隱私權政策</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">會員服務</a></li>
+          <li><a href="">食譜收藏</a></li>
+          <li><a href="">個人頁面</a></li>
+          <li><a href="">帳號設定</a></li>
+          <li><a href="">忘記密碼</a></li>
+          <li><a href="">我的訂單</a></li>
+          <li><a href="">VIP會員</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">逛食譜</a></li>
+          <li><a href="">人氣食譜</a></li>
+          <li><a href="">新廚上菜</a></li>
+          <li><a href="">今日話題</a></li>
+          <li><a href="">最新食譜</a></li>
+          <li><a href="">全部分類</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">逛其他</a></li>
+          <li><a href="">生活誌</a></li>
+          <li><a href="">市集</a></li>
+          <li><a href="">影音</a></li>
+          <li><a href="">試用推薦</a></li>
+          <li><a href="">活動</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

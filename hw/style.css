@@ -77,6 +77,12 @@ table {
   color: rgb(122, 121, 121);
   border-bottom: 5px solid  rgb(122, 121, 121);
 }
+.list_btn_phone{
+  display: none;
+}
+#list_checkbox{
+  display: none;
+}
 
 /* content */
 .content{
@@ -89,10 +95,11 @@ table {
 
 /* about_me */
 .about_me{
-  margin: 0 200px 40px 200px;
+  margin: 0 15% 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
 }
 .left_intro{
   width: 300px;
@@ -101,6 +108,7 @@ table {
   text-align: center;
   border-radius: 10px;
   box-shadow:2px 2px 3px rgb(122, 121, 121);
+  margin-right: 2%;
 }
 .left_intro img{
   width: 200px;
@@ -418,8 +426,53 @@ iframe{
 }
 @media(max-width: 768px){
   .header{
-    /* display: none; */
     width: 100%;
+  }
+  .list_btn_phone{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 5px;
+    right: 5%;
+    background: #fff;
+  }
+  .list_btn_phone::before{
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 20px;
+    width: 35px;
+    height: 4px;
+    /* margin: auto; */
+    background-color: black;
+    box-shadow: 0 10px black, 0 -10px black;
+    border-radius: 5px;
+  }
+  .list{
+    position: fixed;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    height: 100%;
+    left: -100%;
+    padding: 50px 10px 0;
+    box-sizing: border-box;
+  }
+  .list li{
+    border-bottom: 1px solid lightgray;
+  }
+  .header a{
+    display: block;
+  }
+  .header a:hover{
+    border-bottom: none;
+    background: lightgray;
+    color:black;
+  }
+  #list_checkbox:checked ~ .wrap .header .list{
+    left: 0;
   }
   .about_me{
     width: 80%;

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/46167ebbf6.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#account_hover").hide();
+      $("#account_click").click(function () {
+        $("#account_hover").slideToggle();
+      });
+    });
+  </script>
+  <title>法式吐司</title>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="back_to_top"><a href="#header"><i class="fas fa-arrow-up"></i></a></div>
+    <div class="header" id="header">
+      <a class="header_title_a" href="https://icook.tw/">
+        <div class="header_title">
+          <span>料理生活平台</span>
+          <strong>愛料理</strong>
+        </div>
+        <img src="https://assets-icook.icook.network/packs/media/images/festival-new-year-desktop-fe4f2d6b.jpg" alt="">
+      </a>
+      <div class="header_right">
+        <div class="header-right-desktop">
+          <ul>
+            <li><a href="index.html">愛料理</a></li>
+            <li><a href="">生活誌</a></li>
+            <li><a href="">市集</a></li>
+            <li><a href="">影音</a></li>
+            <li><a href="">試用推薦</a></li>
+            <li><a href="" class="vip">升級VIP</a></li>
+          </ul>
+          <ul class="account" id="account_click">
+            <li><img src="img/songmeow.JPG" alt=""></li>
+            <li>張芷菱</li>
+            <ul class="account_hover" id="account_hover">
+              <li><a href="myAccount.html">個人頁面</a></li>
+              <li>食譜收藏</li>
+              <li class="underline">草稿</li>
+              <li>商品訂單</li>
+              <li class="underline">商品蒐藏</li>
+              <li>帳號設定</li>
+              <li>登出</li>
+            </ul>
+          </ul>
+        </div>
+        <div class="header-right-mobile"></div>
+      </div>
+    </div>
+    <div class="header_categories">
+      <ul>
+        <li><a href="">過年年菜</a></li>
+        <li><a href="">烘焙點心</a></li>
+        <li><a href="">素食/蔬食</a></li>
+        <li><a href="">健身</a></li>
+        <li><a href="">寶寶副食品</a></li>
+        <li><a href="">親子</a></li>
+        <li><a href="">慢性病</a></li>
+        <li><a href="">氣炸鍋</a></li>
+        <li><a href="">寵物鮮食</a></li>
+        <li><a href="">美容</a></li>
+      </ul>
+    </div>
+    <div class="container container_recipes">
+      <div class="header_action">
+        <div class="searchBox">
+          <div class="search_by_type_container">
+            <div class="search_by_type">
+              <select name="" id="">
+                <option value="">找食譜</option>
+                <option value="">找作者</option>
+              </select>
+            </div>
+          </div>
+          <input type="text" class="search-input" placeholder="搜尋食譜名">
+          <input type="text" class="search-input" placeholder="搜尋食材 以空格分開">
+          <button type="submit"><i class="fa fa-search fa-20x"></i></button>
+        </div>
+        <div class="recipe_post">
+          <a href="">
+            <i class="fa fa-bookmark"></i>
+            <span>食譜收藏</span>
+          </a>
+          <a href="">
+            <i class="fa fa-plus"></i>
+            <span>寫食譜</span>
+          </a>
+        </div>
+      </div>
+      <div class="hot_search">
+        <ul>
+          <li class="popular_keywords_items popular_keyword"><a href="">熱搜：</a></li>
+          <li class="popular_keywords_items"><a href="">湯</a></li>
+          <li class="popular_keywords_items"><a href="">麻油雞</a></li>
+          <li class="popular_keywords_items"><a href="">年菜</a></li>
+          <li class="popular_keywords_items"><a href="">雞湯</a></li>
+          <li class="popular_keywords_items"><a href="">火鍋</a></li>
+          <li><a href=""><i class="fa fa-caret-down"></i></a></li>
+        </ul>
+      </div>
+      
+      <div class="homepage">
+        <div class="homepage_main">
+          <div class="recipe_details_header_title">
+            <h1>法式吐司</h1>
+            <ul>
+              <li class="fb_color"><i class="fab fa-facebook-f"></i></li>
+              <li class="line_color"><i class="fab fa-line"></i></li>
+              <li><i class="fas fa-link"></i></li>
+              <li><i class="fas fa-print"></i></li>
+            </ul>
+          </div>
+          <div class="recipe_details_header">
+            <div class="recipe_details_header_left">
+              <img class="img_445" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F362350%2F9f0449c6d7932e2b.jpg&width=1080" alt="">
+            </div>
+            <div class="recipe_details_header_right">
+              <div class="recipe_details_author_box">
+                <div class="author_name_stat">
+                  <div class="author_photo"><img class="img_45" src="https://imageproxy.icook.network/resize?height=100&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fuser%2Favatar%2F1959858%2F680efca9b7632403.jpg&width=100" alt=""></div>
+                  <div class="author_content">
+                    <div class="author_name">西路手作🇺🇸🇹🇼</div>
+                    <div class="author_stats">6 食譜 67 粉絲</div>
+                  </div>
+                </div>
+                <span class="follow_btn">追蹤</span>
+              </div>
+              <div class="recipe_stats_list">
+                <div class="recipe_stats">201 說讚</div>
+                <div class="recipe_details_function">
+                  <span class="like_btn"><i class="far fa-heart"></i>讚</span>
+                  <span class="touch_btn"><i class="far fa-bookmark"></i>收藏</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="recipe_details_main">
+            <div class="recipe_details_info">
+              <div class="servings_info">
+                <div>份量</div>
+                <div>2人份</div>
+              </div>
+              <div class="time_info">
+                <div>時間</div>
+                <div>15分鐘</div>
+              </div>
+            </div>
+            <div class="recipe_details_ingredients">
+              <h2>食材</h2>
+              <div class="food_group">
+                <ul class="food_group_ul">
+                  <li><span>厚片吐司</span><span>２片</span></li>
+                  <li><span>雞蛋</span><span>２顆</span></li>
+                  <li><span>鮮奶</span><span>２００ｇ</span></li>
+                  <li><span>白砂糖</span><span>４０ｇ</span></li>
+                  <li><span>無鹽奶油</span><span>適量</span></li>
+                  <li><span>糖粉</span><span>適量</span></li>
+                  <li><span>蜂蜜</span><span>適量</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="recipe_details_howDo">
+            <ul>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819617%2Fa3ef5257df2bda2e.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>1</h3>
+                  <p>將雞蛋、白砂糖及鮮奶充分攪拌均勻</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819618%2Fbb38d5e74181c034.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>2</h3>
+                  <p>取一淺盤將蛋液倒進去</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819619%2F061be12c42ed4b0e.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>3</h3>
+                  <p>將吐司放入鋪平，置於冰箱冷藏1.5個小時後取出翻面</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819620%2F7f6b2a7ebf1135fb.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>4</h3>
+                  <p>翻面後繼續冷藏7-8小時或放隔夜，待吐司充分吸收蛋液後取出</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819621%2Fb873a400fd27495a.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>5</h3>
+                  <p>以無鹽奶油將表面煎至金黃淺褐色</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819622%2Fdd251e3ec0165973.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>6</h3>
+                  <p>翻面也同樣煎至金黃淺褐色</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819623%2F5fa188db1e284239.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>7</h3>
+                  <p>放入烤箱以攝氏180度烤10分鐘</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_240" src="https://imageproxy.icook.network/resize?nocrop=true&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fstep%2Fcover%2F1819624%2F15a3d872e8ac9f19.jpg&width=400" alt="">
+                <div class="recipe_step_description">
+                  <h3>8</h3>
+                  <p>灑上糖粉及蜂蜜裝飾即完成🍽</p>
+                </div>
+              </li>
+            </ul>
+            <div class="recipe_detail_metas">
+              <span><i class="far fa-calendar-alt"></i>2020/12/30 發表</span>
+              <span><i class="fas fa-eye"></i>2 萬 瀏覽</span>
+            </div>
+          </div>
+          <section class="ad_block ad_block_200"><i class="fas fa-ad"></i></section>
+          <div class="recipe_relevant">
+            <div class="recipe_title">也可以試試看</div>
+            <ul class="recipe_title_ul">
+              <li>
+                <img class="img_228" src="https://imageproxy.icook.network/resize?height=150&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F330489%2F6dd78369aa05355a.jpg&width=200" alt="">
+                <p>法式厚片吐司</p>
+              </li>
+              <li>
+                <img class="img_228" src="https://imageproxy.icook.network/resize?height=150&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F332315%2F8249e1c2f42c95c4.jpg&width=200" alt="">
+                <p>【宅在家早餐】法式培根起司菇菇土司</p>
+              </li>
+              <li>
+                <img class="img_228" src="https://imageproxy.icook.network/resize?height=150&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F344747%2F6ebb0341afb6efb1.jpg&width=200" alt="">
+                <p>[懶人料理]法式吐司</p>
+              </li>
+            </ul>
+            <div class="recipe_related_keywords">
+              <ul>
+                <li class="recipe_related_keywords_first">相關搜尋</li>
+                <li><a href="">法式吐司</a></li>
+                <li><a href="">吐司</a></li>
+                <li><a href="">法國吐司</a></li>
+                <li><a href="">早餐</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="recipe_follow_do">
+            <div class="recipe_title">跟著做</div>
+            <div class="recipe_follow_photo">一起跟著做，上傳照片鼓勵作者</div>
+            <div class="upload_photo"><i class="fas fa-camera"></i>上傳照片</div>
+          </div>
+          <div class="recipe_toolbox">
+            <p>覺得這道食譜很讚嗎？</p>
+            <p>快按讚或收藏起來吧！</p>
+            <div class="recipe_details_function recipe_toolbox_details_function">
+              <span class="like_btn"><i class="far fa-heart"></i>讚</span>
+              <span class="touch_btn"><i class="far fa-bookmark"></i>收藏</span>
+            </div>
+            <ul>
+              <li class="fb_color"><i class="fab fa-facebook-f"></i></li>
+              <li class="line_color"><i class="fab fa-line"></i></li>
+              <li><i class="fas fa-link"></i></li>
+              <li><i class="fas fa-print"></i></li>
+            </ul>
+            <div class="author_name_stat author_name_stat_recipe_toolbox">
+              <div class="author_photo"><img class="img_45"
+                  src="https://imageproxy.icook.network/resize?height=100&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Fuser%2Favatar%2F1959858%2F680efca9b7632403.jpg&width=100"
+                  alt="">
+              </div>
+              <div class="author_content">
+                <div class="author_name">西路手作🇺🇸🇹🇼</div>
+                <div class="author_stats">6 食譜 67 粉絲</div>
+              </div>
+              <span class="follow_btn author_name_stat_follow_btn">追蹤</span>
+            </div>
+          </div>
+          <section class="ad_block ad_block_200"><i class="fas fa-ad"></i></section>
+          <div class="market_reommend">
+            <div class="recipe_title">推薦商品
+              <span>更多 ></span>
+            </div>
+            <ul class="market_reommend_ul">
+              <li>
+                <img class="img_120" src="https://imageproxy.icook.network/resize?height=240&nocrop=false&stripmeta=true&type=auto&url=https%3A%2F%2Fuploads-market.icook.network%2Fuploads%2Fproduct%2Fsquare_cover%2F590%2F2fcad5622d.jpg&width=240" alt="">
+                <div class="market_reommend_ul_details">
+                  <h3>Dr.CARE 6分鐘濃縮面膜</h3>
+                  <p>台韓共同研製 6分鐘快速導入</p>
+                  <span>限時優惠買2送1</span>
+                </div>
+              </li>
+              <li>
+                <img class="img_120" src="https://imageproxy.icook.network/resize?height=240&nocrop=false&stripmeta=true&type=auto&url=https%3A%2F%2Fuploads-market.icook.network%2Fuploads%2Fproduct%2Fsquare_cover%2F129%2Ff2938d5cd4.jpg&width=240" alt="">
+                <div class="market_reommend_ul_details">
+                  <h3>董事長福貴糕</h3>
+                  <p>總裁級用料，每日新鮮限量販售</p>
+                  <span>全館8折起</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="recipe_reommend"></div>
+          <div class="comment">
+            <div class="recipe_title">留言</div>
+            <div class="comment_body">
+              <img class="img_48" src="img/songmeow.JPG" alt="">
+              <textarea class="mdc-text-field__input" aria-label="留言輸入區" placeholder="加入討論 (最多可輸入 400 字)" data-error="false"
+                maxlength="400" rows="6" cols="84"></textarea>
+            </div>
+            <div class="comment_btn_div">
+              <span class="comment_btn">發表留言</span>
+            </div>
+          </div>
+          <div class="word_cloud">
+            <div class="recipe_title">大家都在查</div>
+            <ul>
+              <li>桂圓紅棗茶</li>
+              <li>獅子頭</li>
+              <li>牛排</li>
+              <li>砂鍋魚頭</li>
+              <li>鱸魚</li>
+              <li>刈包</li>
+              <li class="word_cloud_hot">炸年糕</li>
+              <li>蒜頭雞湯</li>
+              <li>鮭魚</li>
+              <li>紅燒獅子頭</li>
+              <li>植物肉</li>
+              <li>湯圓</li>
+              <li>回鍋肉</li>
+              <li class="word_cloud_hot">蘿蔔糕</li>
+              <li>素食年菜</li>
+              <li class="word_cloud_hot">紅豆湯</li>
+              <li>燉牛肉</li>
+              <li>脆皮燒肉</li>
+              <li>雪q餅</li>
+              <li>薑母鴨</li>
+            </ul>
+          </div>
+        </div>
+        <div class="homepage_aside">
+          <section class="ad_block"><i class="fas fa-ad"></i></section>
+          <div class="recipe_sidebar">
+            <div class="recipe_title">今日話題
+              <span>更多 ></span>
+            </div>
+            <ul class="recipe_sidebar_ul">
+              <li>
+                <img class="img_96" src="https://imageproxy.icook.network/resize?height=300&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F362407%2F85cd5b83cb8b024b.jpg&width=400" alt="">
+                <div class="recipe_sidebar_details">
+                  <h3>皮蛋瘦肉粥（健康）（減肥）（零失敗）</h3>
+                  <p>三更有夢</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_96" src="https://imageproxy.icook.network/resize?height=300&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F362163%2F592ee4295f15d66f.jpg&width=400" alt="">
+                <div class="recipe_sidebar_details">
+                  <h3>日式黑糖蕨餅</h3>
+                  <p>Day_andday</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_96" src="https://imageproxy.icook.network/resize?height=300&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F361320%2Ff9c154958fd6bb3d.jpg&width=400" alt="">
+                <div class="recipe_sidebar_details">
+                  <h3>燕麥餅乾</h3>
+                  <p>SEAkitchen.</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_96" src="https://imageproxy.icook.network/resize?height=300&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F162767%2F73e8626e7942e484.jpg&width=400" alt="">
+                <div class="recipe_sidebar_details">
+                  <h3>【無油料理】蜜汁豬肋排</h3>
+                  <p>千千媽咪</p>
+                </div>
+              </li>
+              <li>
+                <img class="img_96" src="https://imageproxy.icook.network/resize?height=300&nocrop=false&stripmeta=true&type=auto&url=http%3A%2F%2Ftokyo-kitchen.icook.tw.s3.amazonaws.com%2Fuploads%2Frecipe%2Fcover%2F362350%2F9f0449c6d7932e2b.jpg&width=400" alt="">
+                <div class="recipe_sidebar_details">
+                  <h3>法式吐司</h3>
+                  <p>西路手作🇺🇸🇹🇼</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <section class="ad_block"><i class="fas fa-ad"></i></section>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_col">
+        <img src="/project/img/footer_img.png" alt="" class="img_170">
+        <p>&copy;2011-2021 Polydice, Inc.</p>
+        <ul class="footer_contact">
+          <li><i class="fab fa-facebook-f"></i></li>
+          <li><i class="fab fa-line"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+        </ul>
+        <span class="footer_contact_email"><i class="far fa-envelope"></i>建議與問題</span>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">關於愛料理</a></li>
+          <li><a href="">公司資訊</a></li>
+          <li><a href="">徵才訊息</a></li>
+          <li><a href="">廣告合作</a></li>
+          <li><a href="">品牌資產</a></li>
+          <li><a href="">服務條款</a></li>
+          <li><a href="">隱私權政策</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">會員服務</a></li>
+          <li><a href="">食譜收藏</a></li>
+          <li><a href="">個人頁面</a></li>
+          <li><a href="">帳號設定</a></li>
+          <li><a href="">忘記密碼</a></li>
+          <li><a href="">我的訂單</a></li>
+          <li><a href="">VIP會員</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">逛食譜</a></li>
+          <li><a href="">人氣食譜</a></li>
+          <li><a href="">新廚上菜</a></li>
+          <li><a href="">今日話題</a></li>
+          <li><a href="">最新食譜</a></li>
+          <li><a href="">全部分類</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <ul>
+          <li class="footer_first_title"><a href="">逛其他</a></li>
+          <li><a href="">生活誌</a></li>
+          <li><a href="">市集</a></li>
+          <li><a href="">影音</a></li>
+          <li><a href="">試用推薦</a></li>
+          <li><a href="">活動</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
